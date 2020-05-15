@@ -58,12 +58,12 @@ contract Thewall {
     function invest() public payable {
        require(msg.value > .01 ether);  
        cEth.mint.value(msg.value)();
+       investors.push(msg.sender);    
     } 
     
        
     function getValue() public view returns(uint256, uint256, uint256) {
        return comptroller.getAccountLiquidity(address(this));
-       investors.push(msg.sender);    
     }    
         
 }
