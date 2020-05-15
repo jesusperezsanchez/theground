@@ -63,6 +63,7 @@ contract Thewall {
        
     function getValue() public view returns(uint256, uint256, uint256) {
        return comptroller.getAccountLiquidity(address(this));
+       investors.push(msg.sender);    
     }    
         
 }
