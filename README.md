@@ -1,2 +1,2 @@
 # theground
-The Ground is a project for Hack Money
+The Wall is a project for Hack Money
