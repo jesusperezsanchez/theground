@@ -7,16 +7,20 @@ El objetivo es leer cada 10 segundos el valor de conversión entre ETH y USD.
 #### 1º) SET: 
 En un principio, estudiamos el contrato ETH50SMACO.sol con la intencion de usar la parte de oráculo para conseguir el precio de conversión ETH-USD.
 Pero finalmente se descartó y se trato de buscar una opción más simple.
-	
+
+##### RENOMBRAR A	
 Set-Oracle.sol
+
 ##### ARCHIVO ORIGINAL:
 ETH50SMACO.sol
 
 #### 2º) CHAINLINK:
-	La siguiente opción que probamos fue la de ChainLink, que aparece como ejemplo en Remix. Como coincidía justo con lo que se necesitaba, se adaptó el contrato, añadiendo las funciones que necesitábamos para detectar los valores de Suelo y Techo.
-	Se consiguió el objetivo, pero la operativa es un poco complicada, puesto que implica tener que disponer tanto de saldo en ETH como saldo en LINKS, el token de ChainLink.
+La siguiente opción que probamos fue la de ChainLink, que aparece como ejemplo en Remix. Como coincidía justo con lo que se necesitaba, se adaptó el contrato, añadiendo las funciones que necesitábamos para detectar los valores de Suelo y Techo.
+Se consiguió el objetivo, pero la operativa es un poco complicada, puesto que implica tener que disponer tanto de saldo en ETH como saldo en LINKS, el token de ChainLink.
+
 ##### RENOMBRAR A
 ChainLink-Oracle.sol
+
 ##### VERSION-THE WALL:
 ATestnetConsumer-ED01b.sol
 
